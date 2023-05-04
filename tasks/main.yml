@@ -1,0 +1,100 @@
+# Standards: 1.2
+---
+- name: Download awscli installer
+  when:
+    - cloud_awscli_enabled
+  unarchive:
+    src: "{{ cloud_awscli_installer }}"
+    dest: /usr/local/src
+    remote_src: True
+    owner: root
+    group: root
+  tags:
+    - cloud
+    - awscli
+
+- name: Install awscli commands
+  when:
+    - cloud_awscli_enabled
+  command:
+    cmd: /usr/local/src/aws/install
+    creates: /usr/local/bin/aws
+  tags:
+    - cloud
+    - awscli
+
+- name: Install s4cmd package
+  when:
+    - cloud_awscli_enabled
+  package:
+    name: s4cmd
+    state: present
+  tags:
+    - cloud
+    - awscli
+
+- name: Download eksctl release
+  when:
+    - cloud_eksctl_enabled
+  unarchive:
+    src: "{{ cloud_eksctl_download }}"
+    dest: "{{ cloud_install_path }}"
+    include:
+      - eksctl
+    remote_src: True
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - cloud
+    - eksctl
+
+- name: Download hcloud release
+  when:
+    - cloud_hcloud_enabled
+  unarchive:
+    src: "{{ cloud_hcloud_download }}"
+    dest: "{{ cloud_install_path }}"
+    include:
+      - hcloud
+    remote_src: True
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - cloud
+    - hcloud
+
+- name: Download azure key
+  when:
+    - cloud_azure_enabled
+  shell:
+    cmd: "curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor --output {{ cloud_azure_keyring }}"
+    creates: "{{ cloud_azure_keyring }}"
+  tags:
+    - cloud
+    - azure
+
+- name: Add azure repository
+  when:
+    - cloud_azure_enabled
+  apt_repository:
+    repo: "deb [arch={{ cloud_azure_arch }} signed-by={{ cloud_azure_keyring }}] https://packages.microsoft.com/repos/azure-cli {{ ansible_distribution_release }} main"
+    filename: azure
+    update_cache: True
+    state: present
+  tags:
+    - cloud
+    - azure
+
+- name: Install azure package
+  when:
+    - cloud_azure_enabled
+  package:
+    name: azure-cli
+    state: present
+  tags:
+    - cloud
+    - azure
+
+...

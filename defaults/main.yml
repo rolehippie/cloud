@@ -1,0 +1,50 @@
+# Standards: 1.2
+---
+# @var cloud_awscli_enabled:description: Enable installation of aws cli
+cloud_awscli_enabled: True
+
+# @var cloud_eksctl_arch:description: Architecture for eksctl
+cloud_awscli_arch: "{{ 'aarch64' if ansible_architecture == 'aarch64' else 'x86_64' }}"
+
+# @var cloud_awscli_installer:description: URL to download installer from
+cloud_awscli_installer: "https://awscli.amazonaws.com/awscli-exe-linux-{{ cloud_awscli_arch }}.zip"
+
+# @var cloud_eksctl_enabled:description: Enable installation of eksctl cli
+cloud_eksctl_enabled: True
+
+# @var cloud_eksctl_version:description: Version of eksctl to install
+# renovate: datasource=github-releases depName=weaveworks/eksctl
+cloud_eksctl_version: 0.139.0
+
+# @var cloud_eksctl_arch:description: Architecture for eksctl
+cloud_eksctl_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+
+# @var cloud_eksctl_download:description: URL to download eksctl from
+cloud_eksctl_download: "https://github.com/weaveworks/eksctl/releases/download/v{{ cloud_eksctl_version }}/eksctl_Linux_{{ cloud_eksctl_arch }}.tar.gz"
+
+# @var cloud_hcloud_enabled:description: Enable installation of hcloud cli
+cloud_hcloud_enabled: True
+
+# @var cloud_hcloud_version:description: Version of hcloud to install
+# renovate: datasource=github-releases depName=hetznercloud/cli
+cloud_hcloud_version: 1.33.1
+
+# @var cloud_hcloud_arch:description: Architecture for hcloud
+cloud_hcloud_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+
+# @var cloud_hcloud_download:description: URL to download hcloud from
+cloud_hcloud_download: "https://github.com/hetznercloud/cli/releases/download/v{{ cloud_hcloud_version }}/hcloud-linux-{{ cloud_hcloud_arch }}.tar.gz"
+
+# @var cloud_azure_enabled:description: Enable installation of azure cli
+cloud_azure_enabled: True
+
+# @var cloud_azure_keyring:description: Path for the repository keyring
+cloud_azure_keyring: /usr/share/keyrings/microsoft-archive-keyring.gpg
+
+# @var cloud_azure_arch:description: Architecture for azure
+cloud_azure_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+
+# @var cloud_install_path:description: Path to install the binaries
+cloud_install_path: /usr/bin
+
+...
