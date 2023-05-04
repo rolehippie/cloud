@@ -1,5 +1,14 @@
 # Standards: 1.2
 ---
+- name: Install required packages
+  loop:
+    - unzip
+  package:
+    name: "{{ item }}"
+    state: present
+  tags:
+    - cloud
+
 - name: Download awscli installer
   when:
     - cloud_awscli_enabled
