@@ -144,7 +144,7 @@ Version of eksctl to install
 #### Default value
 
 ```YAML
-cloud_eksctl_version: 0.145.0
+cloud_eksctl_version: 0.146.0
 ```
 
 ### cloud_hcloud_arch
