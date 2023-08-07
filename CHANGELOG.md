@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/rolehippie/cloud/compare/v1.9.0...v1.10.0) (2023-08-07)
+
+
+### Features
+
+* **deps:** update dependency weaveworks/eksctl to v0.151.0 ([582305e](https://github.com/rolehippie/cloud/commit/582305edaf5ed99447225278aedf7bd6272a5086))
+
 ## [1.9.0](https://github.com/rolehippie/cloud/compare/v1.8.0...v1.9.0) (2023-07-24)
 
 
