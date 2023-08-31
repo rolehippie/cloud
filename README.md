@@ -1,6 +1,6 @@
 # cloud
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&amp;logoColor=white)](https://github.com/rolehippie/cloud)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/cloud)
 [![General Workflow](https://github.com/rolehippie/cloud/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/cloud/actions/workflows/general.yml)
 [![Readme Workflow](https://github.com/rolehippie/cloud/actions/workflows/docs.yml/badge.svg)](https://github.com/rolehippie/cloud/actions/workflows/docs.yml)
 [![Galaxy Workflow](https://github.com/rolehippie/cloud/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/cloud/actions/workflows/galaxy.yml)
@@ -43,7 +43,6 @@ Building and improving this Ansible role have been sponsored by my current and p
 
 - Minimum Ansible version: `2.10`
 
-
 ## Default Variables
 
 ### cloud_awscli_arch
@@ -51,8 +50,8 @@ Building and improving this Ansible role have been sponsored by my current and p
 #### Default value
 
 ```YAML
-cloud_awscli_arch: "{{ 'aarch64' if ansible_architecture == 'aarch64' else 'x86_64'\
-  \ }}"
+cloud_awscli_arch: "{{ 'aarch64' if ansible_architecture == 'aarch64' else 'x86_64'
+  }}"
 ```
 
 ### cloud_awscli_enabled
