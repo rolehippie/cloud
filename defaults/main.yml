@@ -14,7 +14,7 @@ cloud_eksctl_enabled: True
 
 # @var cloud_eksctl_version:description: Version of eksctl to install
 # renovate: datasource=github-releases depName=weaveworks/eksctl
-cloud_eksctl_version: 0.156.0
+cloud_eksctl_version: 0.157.0
 
 # @var cloud_eksctl_arch:description: Architecture for eksctl
 cloud_eksctl_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
