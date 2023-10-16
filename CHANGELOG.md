@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/rolehippie/cloud/compare/v1.15.0...v1.16.0) (2023-10-16)
+
+
+### Features
+
+* **deps:** update minor versions ([e239c06](https://github.com/rolehippie/cloud/commit/e239c06b6ad6f782bb627224f9a33db8c044dff4))
+
 ## [1.15.0](https://github.com/rolehippie/cloud/compare/v1.14.0...v1.15.0) (2023-10-09)
 
 
