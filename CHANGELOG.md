@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.17.0](https://github.com/rolehippie/cloud/compare/v1.16.1...v1.17.0) (2023-10-30)
+
+
+### Features
+
+* **deps:** update dependency hetznercloud/cli to v1.39.0 ([088e42d](https://github.com/rolehippie/cloud/commit/088e42de5878859e15e49385657a0f5c400531e6))
+* **deps:** update dependency weaveworks/eksctl to v0.163.0 ([fdea912](https://github.com/rolehippie/cloud/commit/fdea91230963bbb7e0561a02e332b34c8003b167))
+* **deps:** update dependency weaveworks/eksctl to v0.164.0 ([ca7bb01](https://github.com/rolehippie/cloud/commit/ca7bb01041e4991024de597b69b0a5407050079d))
+
 ## [1.16.1](https://github.com/rolehippie/cloud/compare/v1.16.0...v1.16.1) (2023-10-23)
 
 
