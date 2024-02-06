@@ -1,9 +1,8 @@
-# Standards: 1.2
 ---
 - name: Install required packages
   loop:
     - unzip
-  package:
+  ansible.builtin.package:
     name: "{{ item }}"
     state: present
   tags:
@@ -12,7 +11,7 @@
 - name: Download awscli installer
   when:
     - cloud_awscli_enabled
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ cloud_awscli_installer }}"
     dest: /usr/local/src
     remote_src: True
@@ -25,7 +24,7 @@
 - name: Install awscli commands
   when:
     - cloud_awscli_enabled
-  command:
+  ansible.builtin.command:
     cmd: /usr/local/src/aws/install
     creates: /usr/local/bin/aws
   tags:
@@ -35,7 +34,7 @@
 - name: Install s4cmd package
   when:
     - cloud_awscli_enabled
-  package:
+  ansible.builtin.package:
     name: s4cmd
     state: present
   tags:
@@ -45,7 +44,7 @@
 - name: Download eksctl release
   when:
     - cloud_eksctl_enabled
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ cloud_eksctl_download }}"
     dest: "{{ cloud_install_path }}"
     include:
@@ -61,7 +60,7 @@
 - name: Download hcloud release
   when:
     - cloud_hcloud_enabled
-  unarchive:
+  ansible.builtin.unarchive:
     src: "{{ cloud_hcloud_download }}"
     dest: "{{ cloud_install_path }}"
     include:
@@ -77,7 +76,7 @@
 - name: Download azure key
   when:
     - cloud_azure_enabled
-  shell:
+  ansible.builtin.shell:
     cmd: "curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor --output {{ cloud_azure_keyring }}"
     creates: "{{ cloud_azure_keyring }}"
   tags:
@@ -87,7 +86,7 @@
 - name: Add azure repository
   when:
     - cloud_azure_enabled
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: "deb [arch={{ cloud_azure_arch }} signed-by={{ cloud_azure_keyring }}] https://packages.microsoft.com/repos/azure-cli {{ ansible_distribution_release }} main"
     filename: azure
     update_cache: True
@@ -99,7 +98,7 @@
 - name: Install azure package
   when:
     - cloud_azure_enabled
-  package:
+  ansible.builtin.package:
     name: azure-cli
     state: present
   tags:
