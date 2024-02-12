@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.0](https://github.com/rolehippie/cloud/compare/v1.23.0...v2.0.0) (2024-02-12)
+
+
+### Features
+
+* used full qualified collection names ([6ea8a57](https://github.com/rolehippie/cloud/commit/6ea8a57caa91fe07683ae9a5c37480afc862af87))
+
 ## [1.23.0](https://github.com/rolehippie/cloud/compare/v1.22.0...v1.23.0) (2024-02-05)
 
 
