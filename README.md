@@ -122,8 +122,8 @@ URL to download eksctl from
 #### Default value
 
 ```YAML
-cloud_eksctl_download: https://github.com/weaveworks/eksctl/releases/download/v{{
-  cloud_eksctl_version }}/eksctl_Linux_{{ cloud_eksctl_arch }}.tar.gz
+cloud_eksctl_download: https://github.com/eksctl-io/eksctl/releases/download/v{{ cloud_eksctl_version
+  }}/eksctl_Linux_{{ cloud_eksctl_arch }}.tar.gz
 ```
 
 ### cloud_eksctl_enabled
@@ -143,7 +143,7 @@ Version of eksctl to install
 #### Default value
 
 ```YAML
-cloud_eksctl_version: 0.178.0
+cloud_eksctl_version: 0.179.0
 ```
 
 ### cloud_hcloud_arch
