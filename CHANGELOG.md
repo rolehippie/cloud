@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/rolehippie/cloud/compare/v2.6.0...v2.7.0) (2024-06-03)
+
+
+### Features
+
+* **deps:** update dependency eksctl-io/eksctl to v0.180.0 ([4ff08c3](https://github.com/rolehippie/cloud/commit/4ff08c36d61182d831c7d11128cab41b32b220fa))
+
 ## [2.6.0](https://github.com/rolehippie/cloud/compare/v2.5.0...v2.6.0) (2024-05-27)
 
 
