@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.10.0](https://github.com/rolehippie/cloud/compare/v2.9.0...v2.10.0) (2024-06-24)
+
+
+### Features
+
+* **deps:** update dependency hetznercloud/cli to v1.44.0 ([be4be7a](https://github.com/rolehippie/cloud/commit/be4be7adf13ee216f3620872d5c46ee52719456d))
+
 ## [2.9.0](https://github.com/rolehippie/cloud/compare/v2.8.0...v2.9.0) (2024-06-17)
 
 
