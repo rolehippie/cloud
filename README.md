@@ -143,7 +143,7 @@ Version of eksctl to install
 #### Default value
 
 ```YAML
-cloud_eksctl_version: 0.183.0
+cloud_eksctl_version: 0.184.0
 ```
 
 ### cloud_hcloud_arch
@@ -184,7 +184,7 @@ Version of hcloud to install
 #### Default value
 
 ```YAML
-cloud_hcloud_version: 1.44.0
+cloud_hcloud_version: 1.44.2
 ```
 
 ### cloud_install_path
