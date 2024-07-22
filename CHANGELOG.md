@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.13.0](https://github.com/rolehippie/cloud/compare/v2.12.0...v2.13.0) (2024-07-22)
+
+
+### Features
+
+* **deps:** update minor versions ([cb618bb](https://github.com/rolehippie/cloud/commit/cb618bb1decb2bf9cbd1e3fdcfecade160bfc746))
+
 ## [2.12.0](https://github.com/rolehippie/cloud/compare/v2.11.0...v2.12.0) (2024-07-15)
 
 
