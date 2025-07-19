@@ -1,4 +1,4 @@
-# cloud
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/cloud)
 [![General Workflow](https://github.com/rolehippie/cloud/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/cloud/actions/workflows/general.yml)
@@ -71,8 +71,8 @@ URL to download installer from
 #### Default value
 
 ```YAML
-cloud_awscli_installer: https://awscli.amazonaws.com/awscli-exe-linux-{{ cloud_awscli_arch
-  }}.zip
+cloud_awscli_installer: https://awscli.amazonaws.com/awscli-exe-linux-{{ 
+  cloud_awscli_arch }}.zip
 ```
 
 ### cloud_azure_arch
@@ -122,8 +122,8 @@ URL to download eksctl from
 #### Default value
 
 ```YAML
-cloud_eksctl_download: https://github.com/eksctl-io/eksctl/releases/download/v{{ cloud_eksctl_version
-  }}/eksctl_Linux_{{ cloud_eksctl_arch }}.tar.gz
+cloud_eksctl_download: https://github.com/eksctl-io/eksctl/releases/download/v{{
+  cloud_eksctl_version }}/eksctl_Linux_{{ cloud_eksctl_arch }}.tar.gz
 ```
 
 ### cloud_eksctl_enabled
@@ -143,7 +143,7 @@ Version of eksctl to install
 #### Default value
 
 ```YAML
-cloud_eksctl_version: 0.210.0
+cloud_eksctl_version: 0.211.0
 ```
 
 ### cloud_hcloud_arch
@@ -163,8 +163,8 @@ URL to download hcloud from
 #### Default value
 
 ```YAML
-cloud_hcloud_download: https://github.com/hetznercloud/cli/releases/download/v{{ cloud_hcloud_version
-  }}/hcloud-linux-{{ cloud_hcloud_arch }}.tar.gz
+cloud_hcloud_download: https://github.com/hetznercloud/cli/releases/download/v{{
+  cloud_hcloud_version }}/hcloud-linux-{{ cloud_hcloud_arch }}.tar.gz
 ```
 
 ### cloud_hcloud_enabled
@@ -208,7 +208,6 @@ cloud_install_path: /usr/bin
 **_eksctl_**
 
 **_hcloud_**
-
 
 ## Dependencies
 
