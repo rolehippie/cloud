@@ -41,6 +41,22 @@
     - cloud
     - awscli
 
+- name: Download s5cmd release
+  when:
+    - cloud_s5cmd_enabled
+  ansible.builtin.unarchive:
+    src: "{{ cloud_s5cmd_download }}"
+    dest: "{{ cloud_install_path }}"
+    include:
+      - s5cmd
+    remote_src: true
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
+  tags:
+    - cloud
+    - s5cmd
+
 - name: Download eksctl release
   when:
     - cloud_eksctl_enabled

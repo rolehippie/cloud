@@ -8,6 +8,19 @@ cloud_awscli_arch: "{{ 'aarch64' if ansible_architecture == 'aarch64' else 'x86_
 # @var cloud_awscli_installer:description: URL to download installer from
 cloud_awscli_installer: "https://awscli.amazonaws.com/awscli-exe-linux-{{ cloud_awscli_arch }}.zip"
 
+# @var cloud_s5cmd_enabled:description: Enable installation of s5cmd cli
+cloud_s5cmd_enabled: true
+
+# @var cloud_s5cmd_version:description: Version of s5cmd to install
+# renovate: datasource=github-releases depName=peak/s5cmd
+cloud_s5cmd_version: 2.3.0
+
+# @var cloud_s5cmd_arch:description: Architecture for s5cmd
+cloud_s5cmd_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else '64bit' }}"
+
+# @var cloud_s5cmd_download:description: URL to download s5cmd from
+cloud_s5cmd_download: "https://github.com/peak/s5cmd/releases/download/v{{ cloud_s5cmd_version }}/s5cmd_{{ cloud_s5cmd_version }}_Linux-{{ cloud_s5cmd_arch }}.tar.gz"
+
 # @var cloud_eksctl_enabled:description: Enable installation of eksctl cli
 cloud_eksctl_enabled: true
 
