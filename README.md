@@ -1,4 +1,4 @@
-# workspace
+# cloud
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/cloud)
 [![General Workflow](https://github.com/rolehippie/cloud/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/cloud/actions/workflows/general.yml)

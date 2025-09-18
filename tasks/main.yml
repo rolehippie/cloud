@@ -14,7 +14,7 @@
   ansible.builtin.unarchive:
     src: "{{ cloud_awscli_installer }}"
     dest: /usr/local/src
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
   tags:
@@ -49,7 +49,7 @@
     dest: "{{ cloud_install_path }}"
     include:
       - eksctl
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx
@@ -65,7 +65,7 @@
     dest: "{{ cloud_install_path }}"
     include:
       - hcloud
-    remote_src: True
+    remote_src: true
     owner: root
     group: root
     mode: u=rwx,g=rx,o=rx
@@ -76,9 +76,34 @@
 - name: Download azure key
   when:
     - cloud_azure_enabled
-  ansible.builtin.shell:
-    cmd: "curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor --output {{ cloud_azure_keyring }}"
-    creates: "{{ cloud_azure_keyring }}"
+  register: cloud_azure_key_download
+  ansible.builtin.get_url:
+    url: https://packages.microsoft.com/keys/microsoft.asc
+    dest: "{{ cloud_azure_keyring }}.asc"
+    mode: u=rw,g=r,o=r
+    force: true
+  tags:
+    - cloud
+    - azure
+
+- name: Check azure key
+  when:
+    - cloud_azure_enabled
+  register: cloud_azure_key_status
+  ansible.builtin.stat:
+    path: "{{ cloud_azure_keyring }}"
+  tags:
+    - cloud
+    - azure
+
+- name: Dearmor azure key
+  when:
+    - cloud_azure_enabled
+    - cloud_azure_key_download.changed or not cloud_azure_key_status.stat.exists
+  register: cloud_azure_key_convert
+  changed_when: cloud_azure_key_convert.rc == 0
+  ansible.builtin.command:
+    cmd: "gpg --dearmor -o {{ cloud_azure_keyring }} {{ cloud_azure_keyring }}.asc"
   tags:
     - cloud
     - azure
@@ -89,7 +114,7 @@
   ansible.builtin.apt_repository:
     repo: "deb [arch={{ cloud_azure_arch }} signed-by={{ cloud_azure_keyring }}] https://packages.microsoft.com/repos/azure-cli {{ ansible_distribution_release }} main"
     filename: azure
-    update_cache: True
+    update_cache: true
     state: present
   tags:
     - cloud

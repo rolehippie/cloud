@@ -2,7 +2,7 @@
 - name: Converge
   hosts: all
   vars:
-    cloud_awscli_enabled: False
+    cloud_awscli_enabled: false
   roles:
     - role: rolehippie.cloud
 
