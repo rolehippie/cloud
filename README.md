@@ -32,6 +32,10 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [cloud_hcloud_enabled](#cloud_hcloud_enabled)
   - [cloud_hcloud_version](#cloud_hcloud_version)
   - [cloud_install_path](#cloud_install_path)
+  - [cloud_s5cmd_arch](#cloud_s5cmd_arch)
+  - [cloud_s5cmd_download](#cloud_s5cmd_download)
+  - [cloud_s5cmd_enabled](#cloud_s5cmd_enabled)
+  - [cloud_s5cmd_version](#cloud_s5cmd_version)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
 - [License](#license)
@@ -197,6 +201,48 @@ Path to install the binaries
 cloud_install_path: /usr/bin
 ```
 
+### cloud_s5cmd_arch
+
+Architecture for s5cmd
+
+#### Default value
+
+```YAML
+cloud_s5cmd_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else '64bit' }}"
+```
+
+### cloud_s5cmd_download
+
+URL to download s5cmd from
+
+#### Default value
+
+```YAML
+cloud_s5cmd_download: https://github.com/peak/s5cmd/releases/download/v{{ 
+  cloud_s5cmd_version }}/s5cmd_{{ cloud_s5cmd_version }}_Linux-{{ 
+  cloud_s5cmd_arch }}.tar.gz
+```
+
+### cloud_s5cmd_enabled
+
+Enable installation of s5cmd cli
+
+#### Default value
+
+```YAML
+cloud_s5cmd_enabled: true
+```
+
+### cloud_s5cmd_version
+
+Version of s5cmd to install
+
+#### Default value
+
+```YAML
+cloud_s5cmd_version: 2.3.0
+```
+
 ## Discovered Tags
 
 **_awscli_**
@@ -208,6 +254,8 @@ cloud_install_path: /usr/bin
 **_eksctl_**
 
 **_hcloud_**
+
+**_s5cmd_**
 
 ## Dependencies
 
