@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.38.0](https://github.com/rolehippie/cloud/compare/v2.37.0...v2.38.0) (2025-09-18)
+
+
+### Features
+
+* add s5cmd installation ([5bcf7f3](https://github.com/rolehippie/cloud/commit/5bcf7f35fc67c38795597322f69cb6562b36f70d))
+* apply new repo structure and update linting ([493f243](https://github.com/rolehippie/cloud/commit/493f243f7b8366ffab32ea68c644a0abc51da8e1))
+* **deps:** update dependency hetznercloud/cli to v1.52.0 ([#107](https://github.com/rolehippie/cloud/issues/107)) ([7bcf0d7](https://github.com/rolehippie/cloud/commit/7bcf0d726fc7237240f2a6ed5c19c80797f2b016))
+
 ## [2.37.0](https://github.com/rolehippie/cloud/compare/v2.36.0...v2.37.0) (2025-09-01)
 
 
