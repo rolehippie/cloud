@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.39.0](https://github.com/rolehippie/cloud/compare/v2.38.0...v2.39.0) (2025-10-06)
+
+
+### Features
+
+* **deps:** update dependency hetznercloud/cli to v1.53.0 ([#109](https://github.com/rolehippie/cloud/issues/109)) ([d0ae337](https://github.com/rolehippie/cloud/commit/d0ae337944a8d8b63f19c0acc515b967eca258ec))
+* **minor:** update dependency eksctl-io/eksctl to v0.215.0 ([#113](https://github.com/rolehippie/cloud/issues/113)) ([bdc1283](https://github.com/rolehippie/cloud/commit/bdc1283a50391d3d39ddf7b3f64575fc23604247))
+
 ## [2.38.0](https://github.com/rolehippie/cloud/compare/v2.37.0...v2.38.0) (2025-09-18)
 
 
