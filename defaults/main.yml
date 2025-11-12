@@ -26,7 +26,7 @@ cloud_eksctl_enabled: true
 
 # @var cloud_eksctl_version:description: Version of eksctl to install
 # renovate: datasource=github-releases depName=eksctl-io/eksctl
-cloud_eksctl_version: 0.216.0
+cloud_eksctl_version: 0.217.0
 
 # @var cloud_eksctl_arch:description: Architecture for eksctl
 cloud_eksctl_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
