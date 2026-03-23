@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.53.0](https://github.com/rolehippie/cloud/compare/v2.52.0...v2.53.0) (2026-03-23)
+
+### Dependencies
+
+* **minor:** update dependency hetznercloud/cli to v1.62.0 ([#149](https://github.com/rolehippie/cloud/issues/149)) ([0857fc6](https://github.com/rolehippie/cloud/commit/0857fc6861382bb0294d35fed24d5836ef2c0c7a))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([a9b2467](https://github.com/rolehippie/cloud/commit/a9b2467a24ce25a0086c3ab6127bf9e6ffe0cb92))
+* **flake:** updated lockfile [skip ci] ([4dfeabb](https://github.com/rolehippie/cloud/commit/4dfeabbd9292dbf52b2ece3acec10e71290abf9f))
+
 ## [2.52.0](https://github.com/rolehippie/cloud/compare/v2.51.0...v2.52.0) (2026-03-09)
 
 ### Dependencies
