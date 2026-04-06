@@ -54,8 +54,7 @@ Building and improving this Ansible role have been sponsored by my current and p
 #### Default value
 
 ```YAML
-cloud_awscli_arch: "{{ 'aarch64' if ansible_architecture == 'aarch64' else 'x86_64'
-  }}"
+cloud_awscli_arch: "{{ 'aarch64' if ansible_architecture == 'aarch64' else 'x86_64' }}"
 ```
 
 ### cloud_awscli_enabled
@@ -75,8 +74,7 @@ URL to download installer from
 #### Default value
 
 ```YAML
-cloud_awscli_installer: https://awscli.amazonaws.com/awscli-exe-linux-{{ 
-  cloud_awscli_arch }}.zip
+cloud_awscli_installer: https://awscli.amazonaws.com/awscli-exe-linux-{{ cloud_awscli_arch }}.zip
 ```
 
 ### cloud_azure_arch
@@ -126,8 +124,7 @@ URL to download eksctl from
 #### Default value
 
 ```YAML
-cloud_eksctl_download: https://github.com/eksctl-io/eksctl/releases/download/v{{
-  cloud_eksctl_version }}/eksctl_Linux_{{ cloud_eksctl_arch }}.tar.gz
+cloud_eksctl_download: https://github.com/eksctl-io/eksctl/releases/download/v{{ cloud_eksctl_version }}/eksctl_Linux_{{ cloud_eksctl_arch }}.tar.gz
 ```
 
 ### cloud_eksctl_enabled
@@ -167,8 +164,7 @@ URL to download hcloud from
 #### Default value
 
 ```YAML
-cloud_hcloud_download: https://github.com/hetznercloud/cli/releases/download/v{{
-  cloud_hcloud_version }}/hcloud-linux-{{ cloud_hcloud_arch }}.tar.gz
+cloud_hcloud_download: https://github.com/hetznercloud/cli/releases/download/v{{ cloud_hcloud_version }}/hcloud-linux-{{ cloud_hcloud_arch }}.tar.gz
 ```
 
 ### cloud_hcloud_enabled
@@ -218,9 +214,7 @@ URL to download s5cmd from
 #### Default value
 
 ```YAML
-cloud_s5cmd_download: https://github.com/peak/s5cmd/releases/download/v{{ 
-  cloud_s5cmd_version }}/s5cmd_{{ cloud_s5cmd_version }}_Linux-{{ 
-  cloud_s5cmd_arch }}.tar.gz
+cloud_s5cmd_download: https://github.com/peak/s5cmd/releases/download/v{{ cloud_s5cmd_version }}/s5cmd_{{ cloud_s5cmd_version }}_Linux-{{ cloud_s5cmd_arch }}.tar.gz
 ```
 
 ### cloud_s5cmd_enabled
