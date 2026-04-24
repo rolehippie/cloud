@@ -184,7 +184,7 @@ Version of hcloud to install
 #### Default value
 
 ```YAML
-cloud_hcloud_version: 1.62.2
+cloud_hcloud_version: 1.63.0
 ```
 
 ### cloud_install_path
