@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.55.0](https://github.com/rolehippie/cloud/compare/v2.54.1...v2.55.0) (2026-05-04)
+
+### Dependencies
+
+* **minor:** update dependency eksctl-io/eksctl to v0.226.0 ([#156](https://github.com/rolehippie/cloud/issues/156)) ([423b233](https://github.com/rolehippie/cloud/commit/423b233343531d900af90b19b000ea58aa8fd87f))
+* **minor:** update dependency hetznercloud/cli to v1.63.0 ([#154](https://github.com/rolehippie/cloud/issues/154)) ([42d09cc](https://github.com/rolehippie/cloud/commit/42d09ccd8f3895c70a4034c8ba94e4074d74d6ab))
+* **minor:** update dependency hetznercloud/cli to v1.64.1 ([#155](https://github.com/rolehippie/cloud/issues/155)) ([3186cbb](https://github.com/rolehippie/cloud/commit/3186cbb0a1b2b4994d43945ce859df5152de5c42))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([1db86f0](https://github.com/rolehippie/cloud/commit/1db86f0604031fd174d0e4e5c020dd1613cc8e69))
+* **flake:** updated lockfile [skip ci] ([e03bef6](https://github.com/rolehippie/cloud/commit/e03bef67adc98f26f0d13e94b94b8d653b24de8f))
+* **flake:** updated lockfile [skip ci] ([d825d4a](https://github.com/rolehippie/cloud/commit/d825d4a32cfc6992cccb7395c2b5a0ab6002c048))
+
 ## [2.54.1](https://github.com/rolehippie/cloud/compare/v2.54.0...v2.54.1) (2026-04-13)
 
 ### Dependencies
