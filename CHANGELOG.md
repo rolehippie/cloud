@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.57.0](https://github.com/rolehippie/cloud/compare/v2.56.0...v2.57.0) (2026-06-08)
+
+### Dependencies
+
+* **minor:** update dependency eksctl-io/eksctl to v0.227.0 ([#158](https://github.com/rolehippie/cloud/issues/158)) ([77849b2](https://github.com/rolehippie/cloud/commit/77849b2c0d0460d99a195ce42fda17265591579f))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([1bbdffd](https://github.com/rolehippie/cloud/commit/1bbdffd59c52e6c6b30240e52d63e94ff4fa0998))
+* **flake:** updated lockfile [skip ci] ([296ada3](https://github.com/rolehippie/cloud/commit/296ada324afd2b0c0cc2e8f7154b2f43b75c2ebd))
+
 ## [2.56.0](https://github.com/rolehippie/cloud/compare/v2.55.0...v2.56.0) (2026-05-25)
 
 ### Dependencies
