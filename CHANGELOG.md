@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.59.0](https://github.com/rolehippie/cloud/compare/v2.58.0...v2.59.0) (2026-07-27)
+
 ## [2.58.0](https://github.com/rolehippie/cloud/compare/v2.57.0...v2.58.0) (2026-07-13)
 
 ## [2.57.0](https://github.com/rolehippie/cloud/compare/v2.56.0...v2.57.0) (2026-06-08)
