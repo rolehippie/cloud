@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.61.0](https://github.com/rolehippie/cloud/compare/v2.60.0...v2.61.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency eksctl-io/eksctl to v0.230.0 ([#173](https://github.com/rolehippie/cloud/issues/173)) ([b7baaf0](https://github.com/rolehippie/cloud/commit/b7baaf05f3d1f8ae73f7a5853dfb5432590c7008))
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#171](https://github.com/rolehippie/cloud/issues/171)) ([6b20cde](https://github.com/rolehippie/cloud/commit/6b20cde7a1b69098e07fb5d1b54012ebfa0a2390))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#172](https://github.com/rolehippie/cloud/issues/172)) ([1e75514](https://github.com/rolehippie/cloud/commit/1e755140d35615d5869097903d0f9e1601c2a3ef))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#169](https://github.com/rolehippie/cloud/issues/169)) ([ad26e7c](https://github.com/rolehippie/cloud/commit/ad26e7cf788de3d06f13a5f1542c72e9507d9137))
+* **patch:** update dependency pre-commit to v4.6.2 ([#170](https://github.com/rolehippie/cloud/issues/170)) ([f884b9c](https://github.com/rolehippie/cloud/commit/f884b9c431dea492a362b86c008fece1fd85fe64))
+
 ## [2.60.0](https://github.com/rolehippie/cloud/compare/v2.59.0...v2.60.0) (2026-08-10)
 
 ### Dependencies
