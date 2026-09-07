@@ -119,7 +119,7 @@
   register: cloud_azure_key_convert
   changed_when: cloud_azure_key_convert.rc == 0
   ansible.builtin.command:
-    cmd: "gpg --dearmor -o {{ cloud_azure_keyring }} {{ cloud_azure_keyring }}.asc"
+    cmd: "gpg --batch --yes --dearmor -o {{ cloud_azure_keyring }} {{ cloud_azure_keyring }}.asc"
   tags:
     - cloud
     - azure
@@ -128,7 +128,7 @@
   when:
     - cloud_azure_enabled
   ansible.builtin.apt_repository:
-    repo: "deb [arch={{ cloud_azure_arch }} signed-by={{ cloud_azure_keyring }}] https://packages.microsoft.com/repos/azure-cli {{ ansible_distribution_release }} main"
+    repo: "deb [arch={{ cloud_azure_arch }} signed-by={{ cloud_azure_keyring }}] https://packages.microsoft.com/repos/azure-cli {{ ansible_facts['distribution_release'] }} main"
     filename: azure
     update_cache: true
     state: present

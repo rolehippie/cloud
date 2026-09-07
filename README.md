@@ -54,7 +54,7 @@ Building and improving this Ansible role have been sponsored by my current and p
 #### Default value
 
 ```YAML
-cloud_awscli_arch: "{{ 'aarch64' if ansible_architecture == 'aarch64' else 'x86_64' }}"
+cloud_awscli_arch: "{{ 'aarch64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'x86_64' }}"
 ```
 
 ### cloud_awscli_enabled
@@ -84,7 +84,7 @@ Architecture for azure
 #### Default value
 
 ```YAML
-cloud_azure_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+cloud_azure_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'amd64' }}"
 ```
 
 ### cloud_azure_enabled
@@ -114,7 +114,7 @@ Architecture for eksctl
 #### Default value
 
 ```YAML
-cloud_eksctl_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+cloud_eksctl_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'amd64' }}"
 ```
 
 ### cloud_eksctl_download
@@ -154,7 +154,7 @@ Architecture for hcloud
 #### Default value
 
 ```YAML
-cloud_hcloud_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else 'amd64' }}"
+cloud_hcloud_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'amd64' }}"
 ```
 
 ### cloud_hcloud_download
@@ -204,7 +204,7 @@ Architecture for s5cmd
 #### Default value
 
 ```YAML
-cloud_s5cmd_arch: "{{ 'arm64' if ansible_architecture == 'aarch64' else '64bit' }}"
+cloud_s5cmd_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else '64bit' }}"
 ```
 
 ### cloud_s5cmd_download
