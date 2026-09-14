@@ -39,7 +39,7 @@ cloud_hcloud_enabled: true
 
 # @var cloud_hcloud_version:description: Version of hcloud to install
 # renovate: datasource=github-releases depName=hetznercloud/cli
-cloud_hcloud_version: 1.67.0
+cloud_hcloud_version: 1.68.0
 
 # @var cloud_hcloud_arch:description: Architecture for hcloud
 cloud_hcloud_arch: "{{ 'arm64' if ansible_facts['architecture'] in ['aarch64', 'arm64'] else 'amd64' }}"
