@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.63.0](https://github.com/rolehippie/cloud/compare/v2.62.0...v2.63.0) (2026-09-21)
+
+### Dependencies
+
+* **minor:** update dependency hetznercloud/cli to v1.68.0 ([#177](https://github.com/rolehippie/cloud/issues/177)) ([86788f1](https://github.com/rolehippie/cloud/commit/86788f103cca4932c7b0e092895a1d73a5bfeddf))
+* **mise:** update dependency pipx:ansible-core to v2.21.4 ([#175](https://github.com/rolehippie/cloud/issues/175)) ([6fff70f](https://github.com/rolehippie/cloud/commit/6fff70f0a5c1ba6b5bd5f17389b0581c624bbc08))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.2 ([#178](https://github.com/rolehippie/cloud/issues/178)) ([8aed58f](https://github.com/rolehippie/cloud/commit/8aed58fd8365e2c5854f0491db88d49cc6fdd178))
+* **mise:** update dependency prek to v0.5.3 ([#176](https://github.com/rolehippie/cloud/issues/176)) ([0b0fd16](https://github.com/rolehippie/cloud/commit/0b0fd1693a32faa8ba2c3b34649b2dd45e567db7))
+
 ## [2.62.0](https://github.com/rolehippie/cloud/compare/v2.61.1...v2.62.0) (2026-09-07)
 
 ### Features
