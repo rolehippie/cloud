@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.64.0](https://github.com/rolehippie/cloud/compare/v2.63.0...v2.64.0) (2026-10-05)
+
+### Dependencies
+
+* **minor:** update dependency eksctl-io/eksctl to v0.231.0 ([#184](https://github.com/rolehippie/cloud/issues/184)) ([b0612ed](https://github.com/rolehippie/cloud/commit/b0612ed8cf935f9818062f493233dc9b9e468f5f))
+* **minor:** update dependency hetznercloud/cli to v1.69.0 ([#180](https://github.com/rolehippie/cloud/issues/180)) ([fbe5709](https://github.com/rolehippie/cloud/commit/fbe57090ef6be72c81ab4f1df4ea493a4b67b5ee))
+* **mise:** update dependency pipx:ansible-core to v2.21.5 ([#186](https://github.com/rolehippie/cloud/issues/186)) ([65a1b13](https://github.com/rolehippie/cloud/commit/65a1b13432da9f12c9f5ad97e0293d5d444c5c83))
+* **mise:** update dependency pipx:ansible-lint to v26.9.0 ([#181](https://github.com/rolehippie/cloud/issues/181)) ([4bba065](https://github.com/rolehippie/cloud/commit/4bba0652f466b1196dfc0806dfdfa799f15d329e))
+* **mise:** update dependency pipx:molecule to v26.9.0 ([#182](https://github.com/rolehippie/cloud/issues/182)) ([9a6c393](https://github.com/rolehippie/cloud/commit/9a6c3934b861fc6444982eac3e88e595e140cd36))
+* **mise:** update dependency prek to v0.5.4 ([#179](https://github.com/rolehippie/cloud/issues/179)) ([7e69360](https://github.com/rolehippie/cloud/commit/7e6936006522a3547084275d36d3767d3b325443))
+* **mise:** update dependency prek to v0.5.5 ([#185](https://github.com/rolehippie/cloud/issues/185)) ([f467efb](https://github.com/rolehippie/cloud/commit/f467efb0e531df48d299e22747247bf84b93b0b9))
+
 ## [2.63.0](https://github.com/rolehippie/cloud/compare/v2.62.0...v2.63.0) (2026-09-21)
 
 ### Dependencies
