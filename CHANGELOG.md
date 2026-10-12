@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.65.0](https://github.com/rolehippie/cloud/compare/v2.64.0...v2.65.0) (2026-10-12)
+
+### Dependencies
+
+* **minor:** update dependency hetznercloud/cli to v1.70.0 ([#187](https://github.com/rolehippie/cloud/issues/187)) ([874850f](https://github.com/rolehippie/cloud/commit/874850f9a1e389da0115513b0ed7a9bb8d5dc37a))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.3 ([#188](https://github.com/rolehippie/cloud/issues/188)) ([2f3399a](https://github.com/rolehippie/cloud/commit/2f3399ad9444e197073c4ffb7396db7e312d218c))
+* **mise:** update dependency pipx:ansible-lint to v26.10.0 ([#190](https://github.com/rolehippie/cloud/issues/190)) ([d20e6d9](https://github.com/rolehippie/cloud/commit/d20e6d9c4e7fbc0d62caf9e22c99c32f4bf7f720))
+* **mise:** update dependency pipx:molecule to v26.10.0 ([#191](https://github.com/rolehippie/cloud/issues/191)) ([be91831](https://github.com/rolehippie/cloud/commit/be91831a75d61e53e13a3f9dafd39042d3af246e))
+* **patch:** update dependency hetznercloud/cli to v1.70.1 ([#189](https://github.com/rolehippie/cloud/issues/189)) ([d7caee0](https://github.com/rolehippie/cloud/commit/d7caee072adeeb3331793029c6dc7e1dc7462c76))
+
 ## [2.64.0](https://github.com/rolehippie/cloud/compare/v2.63.0...v2.64.0) (2026-10-05)
 
 ### Dependencies
