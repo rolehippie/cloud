@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.65.1](https://github.com/rolehippie/cloud/compare/v2.65.0...v2.65.1) (2026-10-26)
+
+### Dependencies
+
+* **mise:** update dependency pipx:ansible-lint to v26.10.1 ([#192](https://github.com/rolehippie/cloud/issues/192)) ([33ddf45](https://github.com/rolehippie/cloud/commit/33ddf455529fdf028fd1def9d29648c05d93b3f6))
+* **mise:** update dependency prek to v0.5.6 ([#193](https://github.com/rolehippie/cloud/issues/193)) ([eef00b7](https://github.com/rolehippie/cloud/commit/eef00b7343a667893d3b95aac26675972a2fa633))
+* **mise:** update dependency prek to v0.5.7 ([#194](https://github.com/rolehippie/cloud/issues/194)) ([e5a8003](https://github.com/rolehippie/cloud/commit/e5a80035ab8b0f16ff860a11a9f0a23a57df06c3))
+* **patch:** update dependency hetznercloud/cli to v1.70.2 ([#195](https://github.com/rolehippie/cloud/issues/195)) ([4fb14c0](https://github.com/rolehippie/cloud/commit/4fb14c0075d0a22607980e68a37543d7b977be5f))
+
 ## [2.65.0](https://github.com/rolehippie/cloud/compare/v2.64.0...v2.65.0) (2026-10-12)
 
 ### Dependencies
